@@ -17,7 +17,12 @@ SRC = ft_atoi.c \
 	ft_strchr.c \
 	ft_memmove.c \
 	ft_memcmp.c \
-	ft_strlcat.c
+	ft_strlcat.c \
+	ft_strrchr.c \
+	ft_memchr.c \
+	ft_strnstr.c \
+	ft_calloc.c \
+	ft_strdup.c
 	
 
 OBJ = $(SRC:.c=.o)

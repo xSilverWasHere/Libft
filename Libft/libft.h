@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpedro-g <jpedro-g@student.42porto.co      +#+  +:+       +#+        */
+/*   By: jpedro-g <jpedro-g@student.42porto.com     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 14:23:39 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/04/16 14:25:53 by jpedro-g         ###   ########.fr       */
+/*   Updated: 2025/04/22 10:42:27 by jpedro-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 # define LIBFT_H
 
 # include <stdio.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdint.h>
 
 int		ft_isalpha(int c);
 int		ft_atoi(char *str);
@@ -23,7 +26,7 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 void	*ft_memset(void *s, int c, unsigned int n);
-char	*ft_strncpy(char *dest, char *src, unsigned int n);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 int		ft_strlen(const char *str);
 int		ft_strncmp(char	*s1, char *s2, unsigned	int n);
 int		ft_toupper(int a);
@@ -33,6 +36,11 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
-char	*ft_strlcat(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
+char	*ft_strrchr(const char *s, int c);
+void	*ft_memchr(const void *s, int c, size_t n);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
+void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(const char *s);
 
 #endif

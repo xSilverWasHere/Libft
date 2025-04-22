@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpedro-g <jpedro-g@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: jpedro-g <jpedro-g@student.42porto.com     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 12:19:18 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/04/16 15:24:30 by jpedro-g         ###   ########.fr       */
+/*   Created: 2025/04/22 10:36:56 by jpedro-g          #+#    #+#             */
+/*   Updated: 2025/04/22 10:37:10 by jpedro-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	size_t	l;
+	void	*mem;
 
-	l = 0;
-	if (size > 0)
-	{
-		while (src[l] && l < size - 1)
-		{
-			dst[l] = src[l];
-			l++;
-		}
-		dst[l] = '\0';
-	}
-	return (ft_strlen(src));
+	if (nmemb != 0 && size > SIZE_MAX / nmemb)
+		return (NULL);
+	mem = malloc(nmemb * size);
+	if (mem == NULL)
+		return (NULL);
+	ft_bzero(mem, nmemb * size);
+	return (mem);
 }
