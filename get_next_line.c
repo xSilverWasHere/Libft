@@ -6,7 +6,7 @@
 /*   By: jpedro-g <jpedro-g@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 11:24:27 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/05/26 11:23:05 by jpedro-g         ###   ########.fr       */
+/*   Updated: 2025/06/22 12:09:53 by jpedro-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,15 @@ char	*read_until_newline(int fd, char *storage)
 		return (NULL);
 	bytes = 1;
 	if (!storage)
-		storage = ft_strdup("");
-	while (!ft_strchr(storage, '\n') && bytes > 0)
+		storage = newft_strdup("");
+	while (!newft_strchr(storage, '\n') && bytes > 0)
 	{
 		bytes = read(fd, buffer, BUFFER_SIZE);
 		if (bytes == -1)
 			return (free(buffer), free(storage), NULL);
 		buffer[bytes] = '\0';
 		old_storage = storage;
-		tmp = ft_strjoin(storage, buffer);
+		tmp = newft_strjoin(storage, buffer);
 		free(old_storage);
 		storage = tmp;
 		if (bytes == 0)
@@ -72,12 +72,12 @@ char	*update_storage(char *storage, char *line)
 	size_t	len;
 	char	*updated;
 
-	len = ft_strlen(line);
+	len = newft_strlen(line);
 	if (!storage || !line)
 		return (NULL);
-	if (len >= ft_strlen(storage))
+	if (len >= newft_strlen(storage))
 		return (NULL);
-	updated = ft_strndup(storage, len);
+	updated = newft_strndup(storage, len);
 	return (updated);
 }
 
