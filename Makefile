@@ -37,7 +37,7 @@ SRC = ft_atoi.c \
 	get_next_line.c \
 	get_next_line_bonus.c \
 	get_next_line_utils.c \
-	get_next_line_bonus_utils.c
+	get_next_line_utils_bonus.c
 	
 OBJ = $(SRC:.c=.o)
 
