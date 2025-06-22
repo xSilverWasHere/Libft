@@ -6,7 +6,7 @@
 /*   By: jpedro-g <jpedro-g@student.42porto.com     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 14:23:39 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/06/22 12:01:22 by silver           ###   ########.pt       */
+/*   Updated: 2025/06/22 12:03:01 by silver           ###   ########.pt       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <stdlib.h>
 # include <stdint.h>
 # include "get_next_line.h"
-# include "get_nedxt_line_bonus.h"
+# include "get_next_line_bonus.h"
 
 int		ft_isalpha(int c);
 int		ft_atoi(char *str);
