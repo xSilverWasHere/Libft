@@ -6,11 +6,11 @@
 /*   By: jpedro-g <jpedro-g@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 12:04:54 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/04/08 12:05:45 by jpedro-g         ###   ########.fr       */
+/*   Updated: 2025/10/29 15:21:11 by jpedro-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str);
+#include "libft.h"
 
 int	ft_atoi(char *str)
 {

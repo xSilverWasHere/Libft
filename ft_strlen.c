@@ -6,9 +6,11 @@
 /*   By: jpedro-g <jpedro-g@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 12:02:51 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/04/16 12:39:40 by jpedro-g         ###   ########.fr       */
+/*   Updated: 2025/10/29 15:13:41 by jpedro-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(const char *str)
 {

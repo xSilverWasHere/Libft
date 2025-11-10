@@ -6,13 +6,11 @@
 /*   By: jpedro-g <jpedro-g@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 12:29:31 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/04/14 12:44:21 by jpedro-g         ###   ########.fr       */
+/*   Updated: 2025/10/29 15:21:26 by jpedro-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_bzero(void *s, size_t n);
 
 void	ft_bzero(void *s, size_t n)
 {

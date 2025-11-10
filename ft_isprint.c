@@ -6,11 +6,11 @@
 /*   By: jpedro-g <jpedro-g@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 11:58:59 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/04/16 15:03:15 by jpedro-g         ###   ########.fr       */
+/*   Updated: 2025/10/29 15:21:40 by jpedro-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c);
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

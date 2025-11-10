@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpedro-g <jpedro-g@student.42porto.com     +#+  +:+       +#+        */
+/*   By: jpedro-g <jpedro-g@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 14:23:39 by jpedro-g          #+#    #+#             */
-/*   Updated: 2025/06/22 12:03:01 by silver           ###   ########.pt       */
+/*   Updated: 2025/10/29 15:45:05 by jpedro-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
+# include <stdarg.h>
 # include "get_next_line.h"
 # include "get_next_line_bonus.h"
 
@@ -55,5 +56,12 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+int		ft_printf(const char *format, ...);
+int		ft_putchar(char c);
+int		ft_putstr(char *s);
+int		ft_putnbr(int n);
+int		ft_putunsigned(unsigned int n);
+int		ft_puthex(unsigned long n, char *base);
+int		ft_printptr(void *ptr);
 
 #endif
